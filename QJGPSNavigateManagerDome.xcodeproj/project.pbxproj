@@ -15,7 +15,7 @@
 		F22AB6701FA8663B001E5BFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F22AB66F1FA8663B001E5BFC /* main.m */; };
 		F22AB67A1FA8663B001E5BFC /* QJGPSNavigateManagerDomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F22AB6791FA8663B001E5BFC /* QJGPSNavigateManagerDomeTests.m */; };
 		F22AB6851FA8663B001E5BFC /* QJGPSNavigateManagerDomeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F22AB6841FA8663B001E5BFC /* QJGPSNavigateManagerDomeUITests.m */; };
-		F22AB6941FA8669B001E5BFC /* PMGPSNavigateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F22AB6931FA8669B001E5BFC /* PMGPSNavigateManager.m */; };
+		F22AB6941FA8669B001E5BFC /* QJGPSNavigateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F22AB6931FA8669B001E5BFC /* QJGPSNavigateManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		F22AB6801FA8663B001E5BFC /* QJGPSNavigateManagerDomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QJGPSNavigateManagerDomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22AB6841FA8663B001E5BFC /* QJGPSNavigateManagerDomeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QJGPSNavigateManagerDomeUITests.m; sourceTree = "<group>"; };
 		F22AB6861FA8663B001E5BFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F22AB6921FA8669B001E5BFC /* PMGPSNavigateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMGPSNavigateManager.h; sourceTree = "<group>"; };
-		F22AB6931FA8669B001E5BFC /* PMGPSNavigateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMGPSNavigateManager.m; sourceTree = "<group>"; };
+		F22AB6921FA8669B001E5BFC /* QJGPSNavigateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJGPSNavigateManager.h; sourceTree = "<group>"; };
+		F22AB6931FA8669B001E5BFC /* QJGPSNavigateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJGPSNavigateManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +104,8 @@
 		F22AB65F1FA8663A001E5BFC /* QJGPSNavigateManagerDome */ = {
 			isa = PBXGroup;
 			children = (
-				F22AB6921FA8669B001E5BFC /* PMGPSNavigateManager.h */,
-				F22AB6931FA8669B001E5BFC /* PMGPSNavigateManager.m */,
+				F22AB6921FA8669B001E5BFC /* QJGPSNavigateManager.h */,
+				F22AB6931FA8669B001E5BFC /* QJGPSNavigateManager.m */,
 				F22AB6601FA8663A001E5BFC /* AppDelegate.h */,
 				F22AB6611FA8663A001E5BFC /* AppDelegate.m */,
 				F22AB6631FA8663A001E5BFC /* ViewController.h */,
@@ -272,7 +272,7 @@
 			files = (
 				F22AB6651FA8663A001E5BFC /* ViewController.m in Sources */,
 				F22AB6701FA8663B001E5BFC /* main.m in Sources */,
-				F22AB6941FA8669B001E5BFC /* PMGPSNavigateManager.m in Sources */,
+				F22AB6941FA8669B001E5BFC /* QJGPSNavigateManager.m in Sources */,
 				F22AB6621FA8663A001E5BFC /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

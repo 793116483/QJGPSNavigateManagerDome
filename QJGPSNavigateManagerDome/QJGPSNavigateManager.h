@@ -1,5 +1,5 @@
 //
-//  PMGPSNavigateManager.h
+//  QJGPSNavigateManager.h
 //  139PushMail
 //
 //  Created by qujie on 2017/10/14.
@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSInteger , PMGPSErrorType) {
-    PMGPSErrorTypeWithoutApp ,
-    PMGPSErrorTypeWithoutOpenApp ,
-    PMGPSErrorTypeWithoutFindLocation ,
-    PMGPSErrorTypeOther ,
+typedef NS_ENUM(NSInteger , QJGPSErrorType) {
+    QJGPSErrorTypeWithoutApp ,
+    QJGPSErrorTypeWithoutOpenApp ,
+    QJGPSErrorTypeWithoutFindLocation ,
+    QJGPSErrorTypeOther ,
 };
 
 typedef struct {
@@ -20,13 +21,13 @@ typedef struct {
     CGFloat longitude; /**< 经度 */
     CGFloat latitude ; /**< 伟度 */
     
-}PMLocation;
+}QJLocation;
 
-typedef void (^CallBackBlock)(PMLocation location);
-typedef void(^ErrorBlock)(PMGPSErrorType gpsErrorType , NSString * errorMessage);
+typedef void (^CallBackBlock)(QJLocation location);
+typedef void(^ErrorBlock)(QJGPSErrorType gpsErrorType , NSString * errorMessage);
 
 
-@interface PMGPSNavigateManager : NSObject
+@interface QJGPSNavigateManager : NSObject
 
 
 +(instancetype)manager ;
@@ -71,6 +72,6 @@ typedef void(^ErrorBlock)(PMGPSErrorType gpsErrorType , NSString * errorMessage)
 
  @param DestinationLocation 目的地 的 经伟度坐标
  */
--(void)startGPSNavigateWithDestinationLocation:(PMLocation)destinationLocation failure:(ErrorBlock)failure;
+-(void)startGPSNavigateWithDestinationLocation:(QJLocation)destinationLocation failure:(ErrorBlock)failure;
 
 @end

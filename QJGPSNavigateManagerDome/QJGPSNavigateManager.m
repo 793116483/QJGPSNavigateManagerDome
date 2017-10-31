@@ -1,26 +1,26 @@
 //
-//  PMGPSNavigateManager.m
+//  QJGPSNavigateManager.m
 //  139PushMail
 //
 //  Created by qujie on 2017/10/14.
 //  Copyright © 2017年 Á´ãÈÄöÊó†Èôê. All rights reserved.
 //
 
-#import "PMGPSNavigateManager.h"
+#import "QJGPSNavigateManager.h"
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
 #import "AppDelegate.h"
 
-@interface PMGPSNavigateManager ()<CLLocationManagerDelegate , UIActionSheetDelegate>
+@interface QJGPSNavigateManager ()<CLLocationManagerDelegate , UIActionSheetDelegate>
 
 @property (nonatomic , assign) CallBackBlock backBlock ;
 @property (nonatomic , assign) ErrorBlock errorBlock ;
 
 @property (nonatomic , copy) NSString * destinationAddress ;
 //目的地经纬度
-@property (nonatomic, assign) PMLocation destinationLocation;
+@property (nonatomic, assign) QJLocation destinationLocation;
 ////目前所在地经纬度
-//@property (nonatomic, assign) PMLocation currentLocation;
+//@property (nonatomic, assign) QJLocation currentLocation;
 
 @property (nonatomic , strong) NSMutableArray * array ;
 
@@ -30,16 +30,16 @@
 @end
 
 
-@implementation PMGPSNavigateManager
+@implementation QJGPSNavigateManager
 
 
 +(instancetype)manager
 {
-    static PMGPSNavigateManager * manager = nil ;
+    static QJGPSNavigateManager * manager = nil ;
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        manager = [[PMGPSNavigateManager alloc] init];
+        manager = [[QJGPSNavigateManager alloc] init];
     });
     
     return manager ;
@@ -53,17 +53,17 @@
 #pragma mark - 开始导航
 
 // 
--(void)hintErrorWithErrorType:(PMGPSErrorType)errorType message:(NSString *)message failureBlock:(ErrorBlock)failure
+-(void)hintErrorWithErrorType:(QJGPSErrorType)errorType message:(NSString *)message failureBlock:(ErrorBlock)failure
 {
     if (failure) {
         
-        if (errorType == PMGPSErrorTypeWithoutApp) {
+        if (errorType == QJGPSErrorTypeWithoutApp) {
             message = @"没有安装导航地图App";
         }
-        else if (errorType == PMGPSErrorTypeWithoutFindLocation){
+        else if (errorType == QJGPSErrorTypeWithoutFindLocation){
             message = @"未找到目的地位置";
         }
-        else if (errorType == PMGPSErrorTypeWithoutOpenApp){
+        else if (errorType == QJGPSErrorTypeWithoutOpenApp){
             if (message.length) {
                 message = [NSString stringWithFormat:@"无法打开%@",message];
             }
@@ -80,19 +80,19 @@
 {
     self.destinationAddress = destinationName ;
 
-    [self translateWithAddress:destinationName completionHandler:^(PMLocation location) {
+    [self translateWithAddress:destinationName completionHandler:^(QJLocation location) {
        
         [self startGPSNavigateWithDestinationLocation:location failure:failure];
         
-    }failure:^(PMGPSErrorType gpsErrorType, NSString *errorMessage){
+    }failure:^(QJGPSErrorType gpsErrorType, NSString *errorMessage){
 
-        [self startGPSNavigateWithDestinationLocation:((PMLocation){-100000,-100000}) failure:failure];
+        [self startGPSNavigateWithDestinationLocation:((QJLocation){-100000,-100000}) failure:failure];
     }];
 }
 
--(void)startGPSNavigateWithDestinationLocation:(PMLocation)destinationLocation failure:(ErrorBlock)failure
+-(void)startGPSNavigateWithDestinationLocation:(QJLocation)destinationLocation failure:(ErrorBlock)failure
 {
-    [self setupMapURLStrWithEndLocation:destinationLocation endAddress:self.destinationAddress];
+    [self setuQJapURLStrWithEndLocation:destinationLocation endAddress:self.destinationAddress];
     
     self.errorBlock = failure ;
     NSMutableArray * array =  self.array ;
@@ -139,7 +139,7 @@
         [self actionSheet:nil clickedButtonAtIndex:0];
     }
     else{
-        [self hintErrorWithErrorType:PMGPSErrorTypeWithoutApp message:nil failureBlock:failure];
+        [self hintErrorWithErrorType:QJGPSErrorTypeWithoutApp message:nil failureBlock:failure];
     }
 }
 
@@ -153,7 +153,7 @@
 }
 
 // 苹果地图
-- (BOOL)navAppleMap:(PMLocation)destinationLoc
+- (BOOL)navAppleMap:(QJLocation)destinationLoc
 {
     CLLocationCoordinate2D gps = {destinationLoc.latitude,destinationLoc.longitude};
     
@@ -186,13 +186,13 @@
 {
     [self.geocoder geocodeAddressString:address completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
         
-        PMLocation location = {-1,-1};
+        QJLocation location = {-1,-1};
         
         if (placemarks.count > 0 && error == nil) {
             
             CLPlacemark *placemark = placemarks.firstObject;
             
-            location = (PMLocation){placemark.location.coordinate.longitude , placemark.location.coordinate.latitude};
+            location = (QJLocation){placemark.location.coordinate.longitude , placemark.location.coordinate.latitude};
             
             if (completion) {
                 completion(location);
@@ -200,7 +200,7 @@
         }
         else if (placemarks.count == 0){
             NSLog(@"placemarks元素为0");
-                [self hintErrorWithErrorType:PMGPSErrorTypeWithoutFindLocation message:nil failureBlock:failure];
+                [self hintErrorWithErrorType:QJGPSErrorTypeWithoutFindLocation message:nil failureBlock:failure];
         }
     }];
     
@@ -262,7 +262,7 @@
     return mutArray ;
 }
 
--(void)setupMapURLStrWithEndLocation:(PMLocation)endLocation endAddress:(NSString *)endAddress
+-(void)setuQJapURLStrWithEndLocation:(QJLocation)endLocation endAddress:(NSString *)endAddress
 {
     NSString * appName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
     if (!endAddress.length) {
@@ -326,7 +326,7 @@
         }
         
         if (!isSuccess) {
-            [self hintErrorWithErrorType:PMGPSErrorTypeWithoutOpenApp message:appName failureBlock:self.errorBlock] ;
+            [self hintErrorWithErrorType:QJGPSErrorTypeWithoutOpenApp message:appName failureBlock:self.errorBlock] ;
             [self initData];
         }
     }
@@ -336,7 +336,7 @@
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation{
     
-    PMLocation location = {newLocation.coordinate.longitude , newLocation.coordinate.latitude};
+    QJLocation location = {newLocation.coordinate.longitude , newLocation.coordinate.latitude};
     
     if (location.latitude && location.longitude) {
         
