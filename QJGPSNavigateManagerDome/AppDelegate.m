@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "QJGPSNavigateManager.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [[QJGPSNavigateManager manager] initData] ;
+    
     return YES;
 }
 
