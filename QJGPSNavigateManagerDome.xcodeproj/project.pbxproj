@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F22AB6621FA8663A001E5BFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F22AB6611FA8663A001E5BFC /* AppDelegate.m */; };
+		F22AB6651FA8663A001E5BFC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F22AB6641FA8663A001E5BFC /* ViewController.m */; };
+		F22AB6681FA8663A001E5BFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22AB6661FA8663A001E5BFC /* Main.storyboard */; };
+		F22AB66A1FA8663B001E5BFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F22AB6691FA8663B001E5BFC /* Assets.xcassets */; };
+		F22AB66D1FA8663B001E5BFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22AB66B1FA8663B001E5BFC /* LaunchScreen.storyboard */; };
+		F22AB6701FA8663B001E5BFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F22AB66F1FA8663B001E5BFC /* main.m */; };
+		F22AB67A1FA8663B001E5BFC /* QJGPSNavigateManagerDomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F22AB6791FA8663B001E5BFC /* QJGPSNavigateManagerDomeTests.m */; };
+		F22AB6851FA8663B001E5BFC /* QJGPSNavigateManagerDomeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F22AB6841FA8663B001E5BFC /* QJGPSNavigateManagerDomeUITests.m */; };
+		F22AB6941FA8669B001E5BFC /* PMGPSNavigateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F22AB6931FA8669B001E5BFC /* PMGPSNavigateManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F22AB6761FA8663B001E5BFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F22AB6551FA8663A001E5BFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F22AB65C1FA8663A001E5BFC;
+			remoteInfo = QJGPSNavigateManagerDome;
+		};
+		F22AB6811FA8663B001E5BFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F22AB6551FA8663A001E5BFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F22AB65C1FA8663A001E5BFC;
+			remoteInfo = QJGPSNavigateManagerDome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F22AB65D1FA8663A001E5BFC /* QJGPSNavigateManagerDome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QJGPSNavigateManagerDome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F22AB6601FA8663A001E5BFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F22AB6611FA8663A001E5BFC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F22AB6631FA8663A001E5BFC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F22AB6641FA8663A001E5BFC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F22AB6671FA8663A001E5BFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F22AB6691FA8663B001E5BFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F22AB66C1FA8663B001E5BFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F22AB66E1FA8663B001E5BFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F22AB66F1FA8663B001E5BFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F22AB6751FA8663B001E5BFC /* QJGPSNavigateManagerDomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QJGPSNavigateManagerDomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F22AB6791FA8663B001E5BFC /* QJGPSNavigateManagerDomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QJGPSNavigateManagerDomeTests.m; sourceTree = "<group>"; };
+		F22AB67B1FA8663B001E5BFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F22AB6801FA8663B001E5BFC /* QJGPSNavigateManagerDomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QJGPSNavigateManagerDomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F22AB6841FA8663B001E5BFC /* QJGPSNavigateManagerDomeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QJGPSNavigateManagerDomeUITests.m; sourceTree = "<group>"; };
+		F22AB6861FA8663B001E5BFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F22AB6921FA8669B001E5BFC /* PMGPSNavigateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMGPSNavigateManager.h; sourceTree = "<group>"; };
+		F22AB6931FA8669B001E5BFC /* PMGPSNavigateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMGPSNavigateManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F22AB65A1FA8663A001E5BFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22AB6721FA8663B001E5BFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22AB67D1FA8663B001E5BFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F22AB6541FA8663A001E5BFC = {
+			isa = PBXGroup;
+			children = (
+				F22AB65F1FA8663A001E5BFC /* QJGPSNavigateManagerDome */,
+				F22AB6781FA8663B001E5BFC /* QJGPSNavigateManagerDomeTests */,
+				F22AB6831FA8663B001E5BFC /* QJGPSNavigateManagerDomeUITests */,
+				F22AB65E1FA8663A001E5BFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F22AB65E1FA8663A001E5BFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F22AB65D1FA8663A001E5BFC /* QJGPSNavigateManagerDome.app */,
+				F22AB6751FA8663B001E5BFC /* QJGPSNavigateManagerDomeTests.xctest */,
+				F22AB6801FA8663B001E5BFC /* QJGPSNavigateManagerDomeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F22AB65F1FA8663A001E5BFC /* QJGPSNavigateManagerDome */ = {
+			isa = PBXGroup;
+			children = (
+				F22AB6921FA8669B001E5BFC /* PMGPSNavigateManager.h */,
+				F22AB6931FA8669B001E5BFC /* PMGPSNavigateManager.m */,
+				F22AB6601FA8663A001E5BFC /* AppDelegate.h */,
+				F22AB6611FA8663A001E5BFC /* AppDelegate.m */,
+				F22AB6631FA8663A001E5BFC /* ViewController.h */,
+				F22AB6641FA8663A001E5BFC /* ViewController.m */,
+				F22AB6661FA8663A001E5BFC /* Main.storyboard */,
+				F22AB6691FA8663B001E5BFC /* Assets.xcassets */,
+				F22AB66B1FA8663B001E5BFC /* LaunchScreen.storyboard */,
+				F22AB66E1FA8663B001E5BFC /* Info.plist */,
+				F22AB66F1FA8663B001E5BFC /* main.m */,
+			);
+			path = QJGPSNavigateManagerDome;
+			sourceTree = "<group>";
+		};
+		F22AB6781FA8663B001E5BFC /* QJGPSNavigateManagerDomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F22AB6791FA8663B001E5BFC /* QJGPSNavigateManagerDomeTests.m */,
+				F22AB67B1FA8663B001E5BFC /* Info.plist */,
+			);
+			path = QJGPSNavigateManagerDomeTests;
+			sourceTree = "<group>";
+		};
+		F22AB6831FA8663B001E5BFC /* QJGPSNavigateManagerDomeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F22AB6841FA8663B001E5BFC /* QJGPSNavigateManagerDomeUITests.m */,
+				F22AB6861FA8663B001E5BFC /* Info.plist */,
+			);
+			path = QJGPSNavigateManagerDomeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F22AB65C1FA8663A001E5BFC /* QJGPSNavigateManagerDome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F22AB6891FA8663B001E5BFC /* Build configuration list for PBXNativeTarget "QJGPSNavigateManagerDome" */;
+			buildPhases = (
+				F22AB6591FA8663A001E5BFC /* Sources */,
+				F22AB65A1FA8663A001E5BFC /* Frameworks */,
+				F22AB65B1FA8663A001E5BFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QJGPSNavigateManagerDome;
+			productName = QJGPSNavigateManagerDome;
+			productReference = F22AB65D1FA8663A001E5BFC /* QJGPSNavigateManagerDome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F22AB6741FA8663B001E5BFC /* QJGPSNavigateManagerDomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F22AB68C1FA8663B001E5BFC /* Build configuration list for PBXNativeTarget "QJGPSNavigateManagerDomeTests" */;
+			buildPhases = (
+				F22AB6711FA8663B001E5BFC /* Sources */,
+				F22AB6721FA8663B001E5BFC /* Frameworks */,
+				F22AB6731FA8663B001E5BFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F22AB6771FA8663B001E5BFC /* PBXTargetDependency */,
+			);
+			name = QJGPSNavigateManagerDomeTests;
+			productName = QJGPSNavigateManagerDomeTests;
+			productReference = F22AB6751FA8663B001E5BFC /* QJGPSNavigateManagerDomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F22AB67F1FA8663B001E5BFC /* QJGPSNavigateManagerDomeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F22AB68F1FA8663B001E5BFC /* Build configuration list for PBXNativeTarget "QJGPSNavigateManagerDomeUITests" */;
+			buildPhases = (
+				F22AB67C1FA8663B001E5BFC /* Sources */,
+				F22AB67D1FA8663B001E5BFC /* Frameworks */,
+				F22AB67E1FA8663B001E5BFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F22AB6821FA8663B001E5BFC /* PBXTargetDependency */,
+			);
+			name = QJGPSNavigateManagerDomeUITests;
+			productName = QJGPSNavigateManagerDomeUITests;
+			productReference = F22AB6801FA8663B001E5BFC /* QJGPSNavigateManagerDomeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F22AB6551FA8663A001E5BFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = linkin;
+				TargetAttributes = {
+					F22AB65C1FA8663A001E5BFC = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					F22AB6741FA8663B001E5BFC = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F22AB65C1FA8663A001E5BFC;
+					};
+					F22AB67F1FA8663B001E5BFC = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F22AB65C1FA8663A001E5BFC;
+					};
+				};
+			};
+			buildConfigurationList = F22AB6581FA8663A001E5BFC /* Build configuration list for PBXProject "QJGPSNavigateManagerDome" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F22AB6541FA8663A001E5BFC;
+			productRefGroup = F22AB65E1FA8663A001E5BFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F22AB65C1FA8663A001E5BFC /* QJGPSNavigateManagerDome */,
+				F22AB6741FA8663B001E5BFC /* QJGPSNavigateManagerDomeTests */,
+				F22AB67F1FA8663B001E5BFC /* QJGPSNavigateManagerDomeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F22AB65B1FA8663A001E5BFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F22AB66D1FA8663B001E5BFC /* LaunchScreen.storyboard in Resources */,
+				F22AB66A1FA8663B001E5BFC /* Assets.xcassets in Resources */,
+				F22AB6681FA8663A001E5BFC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22AB6731FA8663B001E5BFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22AB67E1FA8663B001E5BFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F22AB6591FA8663A001E5BFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F22AB6651FA8663A001E5BFC /* ViewController.m in Sources */,
+				F22AB6701FA8663B001E5BFC /* main.m in Sources */,
+				F22AB6941FA8669B001E5BFC /* PMGPSNavigateManager.m in Sources */,
+				F22AB6621FA8663A001E5BFC /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22AB6711FA8663B001E5BFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F22AB67A1FA8663B001E5BFC /* QJGPSNavigateManagerDomeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22AB67C1FA8663B001E5BFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F22AB6851FA8663B001E5BFC /* QJGPSNavigateManagerDomeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F22AB6771FA8663B001E5BFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F22AB65C1FA8663A001E5BFC /* QJGPSNavigateManagerDome */;
+			targetProxy = F22AB6761FA8663B001E5BFC /* PBXContainerItemProxy */;
+		};
+		F22AB6821FA8663B001E5BFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F22AB65C1FA8663A001E5BFC /* QJGPSNavigateManagerDome */;
+			targetProxy = F22AB6811FA8663B001E5BFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F22AB6661FA8663A001E5BFC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F22AB6671FA8663A001E5BFC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F22AB66B1FA8663B001E5BFC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F22AB66C1FA8663B001E5BFC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F22AB6871FA8663B001E5BFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F22AB6881FA8663B001E5BFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F22AB68A1FA8663B001E5BFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QJGPSNavigateManagerDome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hy.QJGPSNavigateManagerDome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F22AB68B1FA8663B001E5BFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QJGPSNavigateManagerDome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hy.QJGPSNavigateManagerDome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F22AB68D1FA8663B001E5BFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QJGPSNavigateManagerDomeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hy.QJGPSNavigateManagerDomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QJGPSNavigateManagerDome.app/QJGPSNavigateManagerDome";
+			};
+			name = Debug;
+		};
+		F22AB68E1FA8663B001E5BFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QJGPSNavigateManagerDomeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hy.QJGPSNavigateManagerDomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QJGPSNavigateManagerDome.app/QJGPSNavigateManagerDome";
+			};
+			name = Release;
+		};
+		F22AB6901FA8663B001E5BFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QJGPSNavigateManagerDomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hy.QJGPSNavigateManagerDomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QJGPSNavigateManagerDome;
+			};
+			name = Debug;
+		};
+		F22AB6911FA8663B001E5BFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QJGPSNavigateManagerDomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hy.QJGPSNavigateManagerDomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QJGPSNavigateManagerDome;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F22AB6581FA8663A001E5BFC /* Build configuration list for PBXProject "QJGPSNavigateManagerDome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F22AB6871FA8663B001E5BFC /* Debug */,
+				F22AB6881FA8663B001E5BFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F22AB6891FA8663B001E5BFC /* Build configuration list for PBXNativeTarget "QJGPSNavigateManagerDome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F22AB68A1FA8663B001E5BFC /* Debug */,
+				F22AB68B1FA8663B001E5BFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F22AB68C1FA8663B001E5BFC /* Build configuration list for PBXNativeTarget "QJGPSNavigateManagerDomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F22AB68D1FA8663B001E5BFC /* Debug */,
+				F22AB68E1FA8663B001E5BFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F22AB68F1FA8663B001E5BFC /* Build configuration list for PBXNativeTarget "QJGPSNavigateManagerDomeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F22AB6901FA8663B001E5BFC /* Debug */,
+				F22AB6911FA8663B001E5BFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F22AB6551FA8663A001E5BFC /* Project object */;
+}
